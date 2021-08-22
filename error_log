@@ -1,0 +1,1 @@
+[09-Jun-2020 23:19:27 Africa/Kampala] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/greendl5/public_html/reuelthecloudwalker/renegade/login.php:27) in /home2/greendl5/public_html/reuelthecloudwalker/renegade/login.php on line 29
